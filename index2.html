@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analyst Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+        header {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: #fff;
+            padding: 15px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #444;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5em;
+            color: #444;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+        .skills, .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .skill, .project {
+            background-color: #f3f3f3;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .skill:hover, .project:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .skill h3, .project h3 {
+            margin-top: 0;
+            font-size: 1.5em;
+            color: #333;
+        }
+        .skill p, .project p {
+            font-size: 1em;
+            color: #666;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: sticky;
+            bottom: 0;
+            width: 100%;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>John Doe's Data Analyst Portfolio</h1>
+        <p>Transforming Data into Insights: Mastering SQL, Excel, Tableau, and Python for Informed Decision Making</p>
+    </header>
+    <nav>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills">
+            <div class="skill">
+                <h3>SQL</h3>
+                <p>Proficient in writing complex queries, creating databases, and managing data.</p>
+            </div>
+            <div class="skill">
+                <h3>Excel</h3>
+                <p>Advanced knowledge of Excel for data analysis, including pivot tables and VBA.</p>
+            </div>
+            <div class="skill">
+                <h3>Tableau</h3>
+                <p>Experienced in creating interactive dashboards and data visualizations.</p>
+            </div>
+            <div class="skill">
+                <h3>Python</h3>
+                <p>Skilled in Python for data manipulation, analysis, and machine learning.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Project description goes here. Highlight the tools and techniques used.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Project description goes here. Highlight the tools and techniques used.</p>
+            </div>
+            <div class="project">
+                <h3>Project 3</h3>
+                <p>Project description goes here. Highlight the tools and techniques used.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="contact">
+        <h2 class="section-title">Contact</h2>
+        <p>Email: johndoe@example.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/johndoe" target="_blank">linkedin.com/in/johndoe</a></p>
+    </div>
+    <footer>
+        <p>&copy; 2024 John Doe. All rights reserved. <a href="#top">Back to top</a></p>
+    </footer>
+</body>
+</html>
